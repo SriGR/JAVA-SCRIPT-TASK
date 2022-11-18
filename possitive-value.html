@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Possitive-Value</title>
+    <style>
+       .style1{
+        border: 2px solid black;
+        margin: 20px;
+        padding: 10px;
+       }
+    </style>
+</head>
+<body>
+    <div class="style1">
+    <h1>POSSITIVE VALUE :</h1>
+    <br>
+    <input type="number" id="possitive"></input>
+    <h4 id="alert"> </h4>
+    <script>
+    possitive.oninput=()=>{
+        let a = document.getElementById('possitive').value;
+        if(a<0){
+            document.getElementById('alert').innerHTML="PLEASE ENTER A POSSITIVE VALUE";
+        }
+        else
+            document.getElementById('alert').innerHTML="WE GOT POSSITIVE VALUE SUCCESSFULLY :) ";
+    }
+    </script>
+    </div>

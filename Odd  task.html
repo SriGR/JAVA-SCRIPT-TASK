@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Odd value</title>
+    <style>
+       .style{
+        border: 2px solid black;
+        margin: 20px;
+        padding: 10px;
+       }
+       span{
+        display:inline-block;
+       }
+    </style>
+</head>
+<body>
+    <div class="style">
+    <h1>ODD NUMBER :</h1>
+    <br>
+    <input type="number" id="odd"></input>
+    <script>
+    odd.oninput=()=>{
+    let odd1 = document.getElementById('odd').value;
+    let odd2 = parseInt(odd1)+4 ;
+    let odd3 = parseInt(odd2)+2;
+        if(odd1%2 !== 0){
+            document.getElementById('show1').innerHTML=parseInt(odd1)+2+",";
+            document.getElementById('show2').innerHTML=odd2+",";
+            document.getElementById('show3').innerHTML=odd3;
+        }  
+    else 
+    document.getElementById('alert').innerHTML=" PLEASE ENTER ODD NUMBERS ONLY . . . ";
+    }
+    </script>
+    <span> <p id="show1"></p> </span>
+    <span> <p id="show2"></p></span>
+    <span> <p id="show3"></p></span>
+    <h4 id="alert"> </h4>
+    </div>
+</body>
+</html>
